@@ -1,0 +1,9 @@
+@use 'ui/tokens';
+
+.modal {
+    @include tokens.state(not-active) {
+        * {
+            pointer-events: none !important;
+        }
+    }
+}
